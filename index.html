@@ -33,13 +33,9 @@
       padding: 40px 20px 80px;
     }
 
-    header {
-      display: none; /* Removed duplicate heading */
-    }
-
     .top-heading {
       text-align: center;
-      margin-bottom: 50px;
+      margin-bottom: 40px;
     }
 
     .top-heading h1 {
@@ -110,12 +106,13 @@
   </style>
 </head>
 <body>
-  <div class="top-heading">
-    <h1>Flowers for You, Every Day</h1>
-    <p>A reminder that you are worth celebrating every day!</p>
-  </div>
-
   <div class="container">
+    <!-- Top heading inside container for proper alignment -->
+    <div class="top-heading">
+      <h1>Flowers for You, Every Day</h1>
+      <p>A reminder that you are worth celebrating every day!</p>
+    </div>
+
     <section class="frame">
       <div class="polaroid" id="todayFlower">
         <img src="flower-today.jpg" alt="Today's flower" />
