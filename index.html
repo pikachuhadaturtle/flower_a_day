@@ -11,7 +11,7 @@
       --card: #ffffff;
       --text: #3d3d3d;
       --soft: #c7b8a6;
-      }
+    }
 
     * { box-sizing: border-box; }
 
@@ -34,18 +34,22 @@
     }
 
     header {
+      display: none; /* Removed duplicate heading */
+    }
+
+    .top-heading {
       text-align: center;
       margin-bottom: 50px;
     }
 
-    header h1 {
+    .top-heading h1 {
       font-family: 'Playfair Display', serif;
       font-weight: 600;
       font-size: 2.6rem;
       margin-bottom: 10px;
     }
 
-    header p {
+    .top-heading p {
       font-size: 0.95rem;
       color: #6a6a6a;
     }
@@ -106,16 +110,12 @@
   </style>
 </head>
 <body>
-  <div style="text-align:center; margin-bottom:30px;">
-    <h1 style="font-family:'Playfair Display',serif; font-size:2.4rem; margin-bottom:8px;">Flowers for You, Every Day</h1>
-    <p style="font-size:0.95rem; opacity:0.8;">A reminder that you are worth celebrating every day!</p>
+  <div class="top-heading">
+    <h1>Flowers for You, Every Day</h1>
+    <p>A reminder that you are worth celebrating every day!</p>
   </div>
-  <div class="container">
-    <header>
-      <h1>Flowers for You, Every Day</h1>
-      <p>A reminder that you are worth celebrating every day!</p>
-    </header>
 
+  <div class="container">
     <section class="frame">
       <div class="polaroid" id="todayFlower">
         <img src="flower-today.jpg" alt="Today's flower" />
@@ -133,6 +133,5 @@
     const date = new Date();
     document.getElementById('dateText').innerText = date.toDateString();
   </script>
-</body>
 </body>
 </html>
